@@ -1,27 +1,52 @@
-# Logs
-logs/
-*.log
-
-# Fabric Generated Files
-organizations/
-channel-artifacts/
-
-# Docker
-*.pid
-
-# IDE
-.vscode/
-.idea/
-
-# OS
+# ==========================
+# Operating System
+# ==========================
 .DS_Store
 Thumbs.db
 
-# Go
-vendor/
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
 
-# Node
-node_modules/
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*.pyo
 
-# Temporary
+# ==========================
+# Logs
+# ==========================
+*.log
+logs/
+
+# ==========================
+# Hyperledger Fabric Generated Files
+# ==========================
+organizations/
+channel-artifacts/
+system-genesis-block/
+crypto-config/
+wallet/
+*.block
+*.tx
+
+# ==========================
+# Docker
+# ==========================
+*.pid
+
+# ==========================
+# Temporary Files
+# ==========================
 tmp/
+temp/
+
+# ==========================
+# Environment Files
+# ==========================
+.env
+.env.*
